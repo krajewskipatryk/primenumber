@@ -1,5 +1,6 @@
 package com.prime.number.test.application.services.impl;
 
+import com.prime.number.test.application.exceptions.InvalidValueTypeException;
 import com.prime.number.test.application.services.utils.prime.PrimeNumberUtils;
 import com.prime.number.test.application.services.utils.prime.PrimeNumberUtilsImpl;
 import com.sun.jdi.InvalidTypeException;
@@ -16,7 +17,7 @@ import static org.mockito.Mockito.*;
 
 class PrimeNumberServiceImplTest {
     @Test
-    void testMockListIsPrimeNumber() throws InvalidTypeException {
+    void IsPrimeNumberIsCalledCorrectly() throws InvalidValueTypeException {
         PrimeNumberServiceImpl primeNumberService = mock(PrimeNumberServiceImpl.class);
 
         primeNumberService.isPrimeNumber("1");

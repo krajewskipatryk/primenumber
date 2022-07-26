@@ -1,5 +1,6 @@
 package com.prime.number.test.application.controllers;
 
+import com.prime.number.test.application.exceptions.InvalidValueTypeException;
 import com.prime.number.test.application.model.PrimeNumberInitial;
 import com.prime.number.test.application.services.PrimeNumberService;
 import com.sun.jdi.InvalidTypeException;
@@ -16,7 +17,7 @@ public class PrimeNumberController {
     private final PrimeNumberService primeNumberService;
 
     @GetMapping("/prime")
-    public boolean isPrimeNumber(@RequestBody PrimeNumberInitial initialValue) throws InvalidTypeException, InvalidAttributeValueException {
+    public boolean isPrimeNumber(@RequestBody PrimeNumberInitial initialValue) throws InvalidTypeException, InvalidAttributeValueException, InvalidValueTypeException {
 
             return primeNumberService.isPrimeNumber(initialValue.getNumber());
     }
