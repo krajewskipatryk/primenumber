@@ -1,3 +1,5 @@
+Project made for unit tests learning
+
 The program checks if a provided number is prime number or not.
 API returns true if the number is prime number
 API returns false if the number is not prime number
