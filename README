@@ -1,0 +1,5 @@
+The program checks if a provided number is prime number or not.
+API returns true if the number is prime number
+API returns false if the number is not prime number
+
+Also the project contains unit tests for all methods used.
